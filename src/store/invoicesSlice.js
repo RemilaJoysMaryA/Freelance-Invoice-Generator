@@ -5,7 +5,7 @@ import axios from "axios";
 export const fetchInvoices = createAsyncThunk(
   "invoices/fetchInvoices",
   async () => {
-    const response = await axios.get("http://localhost:5000/api/invoices");
+    const response = await axios.get("https://freelance-invoice-generator.onrender.com/api/invoices");
     return Array.isArray(response.data) ? response.data : []; // ensure array
   }
 );
@@ -14,7 +14,7 @@ export const fetchInvoices = createAsyncThunk(
 export const deleteInvoice = createAsyncThunk(
   "invoices/deleteInvoice",
   async (id) => {
-    await axios.delete(`http://localhost:5000/api/invoices/${id}`);
+    await axios.delete(`https://freelance-invoice-generator.onrender.com/api/invoices/${id}`);
     return id; // return deleted invoice id
   }
 );

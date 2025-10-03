@@ -37,7 +37,7 @@ function ClientsPage() {
   const handleAdd = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/clients", form);
+      const response = await axios.post("https://freelance-invoice-generator.onrender.com/api/clients", form);
       if (response.status === 200 || response.status === 201) {
         dispatch(fetchClients());
         setForm({ name: "", email: "", company: "", contact: "" });
@@ -53,7 +53,7 @@ function ClientsPage() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/clients/${editingClient._id}`,
+        `https://freelance-invoice-generator.onrender.com/api/clients/${editingClient._id}`,
         form
       );
       if (response.status === 200) {
@@ -71,7 +71,7 @@ function ClientsPage() {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this client?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/clients/${id}`);
+        await axios.delete(`https://freelance-invoice-generator.onrender.com/api/clients/${id}`);
         dispatch(fetchClients());
       } catch (err) {
         console.error("Error deleting client:", err);

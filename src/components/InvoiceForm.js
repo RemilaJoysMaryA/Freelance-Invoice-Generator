@@ -8,7 +8,7 @@ function InvoiceForm({ onSubmit }) {
 
   useEffect(() => {
     async function fetchClients() {
-      const res = await axios.get("http://localhost:5000/api/clients");
+      const res = await axios.get("https://freelance-invoice-generator.onrender.com/api/clients");
       setClients(res.data);
     }
     fetchClients();

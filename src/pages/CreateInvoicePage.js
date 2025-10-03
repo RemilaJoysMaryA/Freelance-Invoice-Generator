@@ -8,7 +8,7 @@ function CreateInvoicePage() {
 
   const handleSave = async (invoice) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/invoices", invoice);
+      const response = await axios.post("https://freelance-invoice-generator.onrender.com/api/invoices", invoice);
       if (response.status === 201) {
         alert("Invoice created successfully!");
         navigate("/invoices"); // go back to invoices list
