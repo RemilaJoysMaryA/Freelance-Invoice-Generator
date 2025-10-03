@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+/* Global Reset */
+body {
+  background-color: #f8f9fc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header */
+.header-bar {
+  background: #02a8c2;
   color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.client{
+  color: #02a8c2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonsubmit {
+  background-color: #02a8c2 !important; /* blue */
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.buttonsubmit:hover {
+  background-color: #02a8c2 !important; /* darker blue */
+}
+/* Section Title */
+.section-title {
+  color: #02a8c2;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+/* Carousel */
+.carousel-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+  width: 16rem;
+  margin: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top-sm {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Invoice Form */
+/* Global Reset */
+body {
+  background-color: #f8f9fc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header-bar {
+  background: #02a8c2;;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+  color: #02a8c2;;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+/* Carousel */
+.carousel-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+  width: 16rem;
+  margin: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+.card-img-top-sm {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Invoice Form */
+.invoice-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+}
+.invoice-form input,
+.invoice-form textarea {
+  border-radius: 8px;
+}
+
+/* Invoice Cards */
+.invoice-card {
+  width: 20rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 15px;
+}
+.invoice-card table {
+  font-size: 0.9rem;
+}
+
+
+/* Invoice Cards */
+.invoice-card {
+  width: 20rem;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 15px;
+}
+.invoice-card table {
+  font-size: 0.9rem;
 }
